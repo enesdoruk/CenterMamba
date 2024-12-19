@@ -92,4 +92,8 @@ class SECOND(BaseModule):
         for i in range(len(self.blocks)):
             x = self.blocks[i](x)
             outs.append(x)
+
+        # torch.Size([4, 64, 256, 256])
+        # torch.Size([4, 128, 128, 128])
+        # torch.Size([4, 256, 64, 64])
         return tuple(outs)
